@@ -1,4 +1,4 @@
-# $Id$
+# Changes for HTTP::Cookies::Safari
 
 1.15 - Mon Apr 18 14:43:38 2011
 	* Updated module and fixed test with expiring cookie
@@ -18,7 +18,7 @@
 	anyway.
 
 1.09 - Thu Oct 13 15:19:42 2005
-	* Jon Orwants pointed out that a Safari cookie file could have a 
+	* Jon Orwant pointed out that a Safari cookie file could have a
 	date past the unix epoch for the expiry time of the cookie. I need to
 	convert that to unix seconds internally. To get around this, dates too
 	far in the future get truncated to 0xFF_FF_FF_FF.
@@ -30,14 +30,13 @@
 	* no code updates: no need to upgrade
 
 1.06 - Mon Sep 20 20:13:09 2004
-* updated to work with the latest Mac::PropertyList, which has a new
-interface
+	* updated to work with the latest Mac::PropertyList, which has a new
+	interface
 
 1.03 - Thu Nov 27 06:56:07 2003
-HTTP::Cookies::Safari now uses Date::Calc instead of Date::Manip.
-This should make date calculations much faster. 
-
-No bugs were fixed, but this should be a performance boost.
+	* HTTP::Cookies::Safari now uses Date::Calc instead of Date::Manip.
+	This should make date calculations much faster.
+	* No bugs were fixed, but this should be a performance boost.
 
 1.02 - Wed Jan  8 01:11:51 2003
 	* now handles expiry times
