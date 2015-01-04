@@ -1,4 +1,4 @@
-# Changes for HTTP::Cookies::Safari
+Revision history for Perl module HTTP::Cookies::Safari
 
 1.15 - Mon Apr 18 14:43:38 2011
 	* Updated module and fixed test with expiring cookie
