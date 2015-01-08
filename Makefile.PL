@@ -2,11 +2,14 @@ require 5.008;
 use strict;
 use warnings;
 
-my $github    = 'https://github.com/briandfoy/';
-my $main_file = 'lib/HTTP/Cookies/Safari.pm';
+use File::Spec::Functions qw(catfile);
+
+my $module    = 'HTTP::Cookies::Safari';
+my $github    = 'https://github.com/briandfoy/http-cookies-safari';
+my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
-	'NAME'          => 'HTTP::Cookies::Safari',
+	'NAME'          => $module,
 	'ABSTRACT_FROM' => $main_file,
 	'VERSION_FROM'  => $main_file,
 	'LICENSE'       => 'perl',
