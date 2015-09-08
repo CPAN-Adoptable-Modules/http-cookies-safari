@@ -4,6 +4,8 @@ use strict;
 use warnings;
 no warnings;
 
+=encoding utf8
+
 =head1 NAME
 
 HTTP::Cookies::Safari - Cookie storage and management for Safari
@@ -133,11 +135,11 @@ sub save
 
 	my $plist = Mac::PropertyList::array->new( [] );
 	print STDERR "plist is $plist\n";
-	
-	
+
+
     $self->scan(
     	do {
-    	
+
     	my $array = $plist->value;
 		my $n = 1;
 
@@ -177,7 +179,7 @@ sub save
 			push @$array, Mac::PropertyList::dict->new( $hash );
     		}
 		} );
-	
+
 	open my $fh, "> $file" or die "Could not write file [$file]! $!\n";
     print $fh ( Mac::PropertyList::plist_as_string( $plist ) );
     close $fh;
