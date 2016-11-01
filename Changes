@@ -1,5 +1,9 @@
 Revision history for Perl module HTTP::Cookies::Safari
 
+1.151 2016-11-27T21:11:58Z
+	* Remove the prereq test. Test::Prereq acts differently now and I do
+	this at release time.
+
 1.15 - 2011-04-18
 	* Updated module and fixed test with expiring cookie
 	* Everything works the same as the last version
