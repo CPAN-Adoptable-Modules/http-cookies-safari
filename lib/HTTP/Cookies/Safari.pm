@@ -74,7 +74,7 @@ use vars qw( $VERSION );
 use constant TRUE  => 'TRUE';
 use constant FALSE => 'FALSE';
 
-$VERSION = '1.15';
+$VERSION = '1.151';
 
 use Date::Calc;
 use Mac::PropertyList;
