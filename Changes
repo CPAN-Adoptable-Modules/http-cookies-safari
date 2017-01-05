@@ -1,5 +1,9 @@
 Revision history for Perl module HTTP::Cookies::Safari
 
+1.152 2017-01-05T23:52:20Z
+	* Bump version to index in PAUSE. This is actually an ADOPTME
+	module, but I made a small fix.
+
 1.151 2016-11-27T21:11:58Z
 	* Remove the prereq test. Test::Prereq acts differently now and I do
 	this at release time.
