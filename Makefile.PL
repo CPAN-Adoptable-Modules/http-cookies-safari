@@ -44,7 +44,7 @@ my $github    = 'https://github.com/briandfoy/http-cookies-safari';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
-	'MIN_PERL_VERSION' => '5.008',
+	'MIN_PERL_VERSION' => '5.010',
 
 	'NAME'          => $module,
 	'ABSTRACT_FROM' => $main_file,
@@ -67,7 +67,7 @@ my %WriteMakefile = (
 	'PREREQ_PM'     => {
 		'Date::Calc'            => '0',
 		'HTTP::Cookies'         => '1.25',
-		'Mac::PropertyList'     => '1.33',
+		'Mac::PropertyList'     => '1.33', # requires v5.10
 		'Text::Diff'            => '0',
 		},
 
